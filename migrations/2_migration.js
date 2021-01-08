@@ -3,7 +3,7 @@ const MyAddress = artifacts.require("MyAddress");
 const MyCalculator = artifacts.require("MyCalculator");
 
 module.exports = function (deployer) {
-  deployer.deploy(HelloWorld);
+  deployer.deploy(HelloWorld, "Hello Mac");
   deployer.deploy(MyAddress);
   deployer.deploy(MyCalculator);
 };
